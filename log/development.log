@@ -3,3 +3,118 @@
   MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :ns=>"wildcard_development.oauth_access_tokens", :key=>{:token=>1}, :name=>"token_1"}] flags=[] (0.0639ms)
   MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :sparse=>true, :ns=>"wildcard_development.oauth_access_tokens", :key=>{:refresh_token=>1}, :name=>"refresh_token_1"}] flags=[] (0.0629ms)
   MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :ns=>"wildcard_development.oauth_applications", :key=>{:uid=>1}, :name=>"uid_1"}] flags=[] (0.0622ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-17 18:05:47 -0500
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Compiled home.css  (7ms)  (pid 21572)
+Compiled application.css  (13ms)  (pid 21572)
+Compiled jquery.js  (1ms)  (pid 21572)
+Compiled jquery_ujs.js  (0ms)  (pid 21572)
+Compiled home.js  (197ms)  (pid 21572)
+Compiled application.js  (240ms)  (pid 21572)
+Completed 200 OK in 345ms (Views: 344.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 18:08:24 -0500
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 18:17:44 -0500
+
+LoadError (cannot load such file -- omniauth):
+  app/models/user.rb:6:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/iterion/.rvm/gems/ruby-1.9.3-p429@wildcard/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/iterion/.rvm/gems/ruby-1.9.3-p429@wildcard/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/iterion/.rvm/gems/ruby-1.9.3-p429@wildcard/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 49ms (Views: 48.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:11 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/iterion/.rvm/gems/ruby-1.9.3-p429@wildcard/gems/devise-2.2.4/app/views/devise/shared/_links.erb (1.8ms)
+  Rendered /Users/iterion/.rvm/gems/ruby-1.9.3-p429@wildcard/gems/devise-2.2.4/app/views/devise/registrations/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 35ms (Views: 34.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-17 18:19:19 -0500
+Served asset /home.js - 304 Not Modified (0ms)
