@@ -12,3 +12,4 @@ A native iPhone client is a stretch goal. The rails api should be written such t
 * 311 would like to view recent reports of incidents (water main damage, potholes, trash)
 * Bob wants to tell 311 that his trash wasn't picked up so they `*card` 311*trash
 * Bobbette is standing in a long line at Torchy's longing for the short wait of Istanbul so she `*cards` "long*line at torchy's, wish I had gone to Istanbul :("
+* Make lists of wildcards (sushi happy hours)
