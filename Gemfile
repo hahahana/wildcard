@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'mongoid'
 gem 'active_model_serializers'
+gem 'devise'
+gem 'jquery-rails'
+gem 'doorkeeper'
 
 
 # Gems used only for assets and not required
@@ -15,7 +18,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 group :development do
   gem 'pry'

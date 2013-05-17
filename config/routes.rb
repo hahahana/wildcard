@@ -1,4 +1,8 @@
 Wildcard::Application.routes.draw do
+  use_doorkeeper
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

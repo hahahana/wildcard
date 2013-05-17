@@ -1,0 +1,5 @@
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6590ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :ns=>"wildcard_development.oauth_access_grants", :key=>{:token=>1}, :name=>"token_1"}] flags=[] (0.0808ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :ns=>"wildcard_development.oauth_access_tokens", :key=>{:token=>1}, :name=>"token_1"}] flags=[] (0.0639ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :sparse=>true, :ns=>"wildcard_development.oauth_access_tokens", :key=>{:refresh_token=>1}, :name=>"refresh_token_1"}] flags=[] (0.0629ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=wildcard_development collection=system.indexes documents=[{:unique=>true, :ns=>"wildcard_development.oauth_applications", :key=>{:uid=>1}, :name=>"uid_1"}] flags=[] (0.0622ms)
