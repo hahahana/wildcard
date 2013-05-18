@@ -9,7 +9,7 @@ class PreSeed < Mongoid::Migration
       puts s.to_s    
       if !s.empty? then
         puts "Adding " + s[0].address
-        c = Card.new(:tag => tag, :location_name => name, :address =>s[0].address, :location => {:lat => s[0].latitude, :lng => s[0].longitude} )
+        c = Card.create(:tag => tag, :location_name => name, :address =>s[0].address, :location => {:lat => s[0].latitude, :lng => s[0].longitude} )
       elsif s.empty? then
         puts "Skipping " + address
       end
