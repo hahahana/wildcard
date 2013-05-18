@@ -10,5 +10,9 @@ Wildcard.MapRoute = Ember.Route.extend({
     this.render();
 
     this.render('user', {outlet: 'user'});
+    this.render('sidebarPosts', {   // the template to render
+      outlet: 'sidebarPosts',       // the name of the outlet in that template
+      controller: 'map'  // the controller to use for the template
+    });
   }
 });
