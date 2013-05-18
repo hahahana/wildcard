@@ -1,11 +1,12 @@
 class Card
   include Mongoid::Document
+  include Mongoid::Geospatial
 
   field :tag,         :type => String
   field :message,     :type => String
-  field :coordinates, :type => Array
+  geo_field :location
 
   belongs_to :user
 
-  validates_presence_of :tag, :coordinates
+  validates_presence_of :tag, :location
 end

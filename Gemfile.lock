@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/kristianmandrup/mongoid_geospatial.git
+  revision: 27240158e750e5656989a42f9155fd3a5837fd3a
+  specs:
+    mongoid_geospatial (2.7.1)
+      activesupport (>= 3.2)
+      mongoid (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -183,6 +191,7 @@ DEPENDENCIES
   jquery-rails
   json (~> 1.7.7)
   mongoid
+  mongoid_geospatial!
   omniauth-twitter
   pry
   rails (= 3.2.13)

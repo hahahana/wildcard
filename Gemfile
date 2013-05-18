@@ -15,6 +15,7 @@ gem "ember-source",      "~> 1.0.0.rc3.3"
 gem "handlebars-source", "~> 1.0.0.rc3"
 gem 'jquery-rails'
 gem 'json',              '~> 1.7.7'
+gem 'mongoid_geospatial', :git => 'git://github.com/kristianmandrup/mongoid_geospatial.git'
 
 
 # Gems used only for assets and not required
