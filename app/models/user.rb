@@ -30,7 +30,7 @@ class User
   field :name, type: String
   field :oauth_token, type: String
   field :oauth_expires_at, type: Time
-  field :profile_picture, type: String
+
   has_many :cards
 
   ## Confirmable
