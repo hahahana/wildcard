@@ -59,34 +59,25 @@ Wildcard.Store = DS.Store.extend({
 
 DS.RESTAdapter.registerTransform('coordinatePoint', {
   serialize: function(value) {
-    // return {
-    //   latitude: value.get('latitude'),
-    //   longitude: value.get('longitude')
-    // };
-    return [value.latitude, value.longitude];
+    return [value.lat, value.lng];
   },
   deserialize: function(value) {
-    return Ember.create({ latitude: value[0], longitude: value[1] });
-    // return Ember.create({lattitude: value.latitude, longitude: value.longitude});
+    return Ember.create({ lat: value[0], lng: value[1] });
   }
 });
 
-Canvas = Ember.Application.create({
-  rootElement: "#map_canvas"
-});
-
-Canvas.initMap = function () {
+Wildcard.initMap = function () {
   var myOptions = {
     center: new google.maps.LatLng(29.75002,-95.371718),
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  Canvas.map = new google.maps.Map($("#map_canvas")[0],
+  Wildcard.map = new google.maps.Map($("#map_canvas")[0],
       myOptions);
 };
 
-Canvas.ready = function () {
-  Canvas.initMap();
+Wildcard.ready = function () {
+  Wildcard.initMap();
 };
 
 
