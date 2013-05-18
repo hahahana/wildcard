@@ -4,6 +4,7 @@ ruby "1.9.3"
 
 gem 'rails', '3.2.13'
 gem 'mongoid'
+gem 'unicorn'
 gem 'active_model_serializers'
 gem 'devise'
 gem 'omniauth-twitter'
