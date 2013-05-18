@@ -9,17 +9,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-
+    
     <%= yield %>
 
     <footer>
-      <div class="clearfix">
-        <p class="pull-left"><a class="notify-disabled" href="#"><i class="icon-chevron-up"></i></a></p>
-          <p class="pull-right">&copy; 2013 
-            <a href="http://mickael-girault.fr" target="_blank">Wildcard</a>&nbsp;|&nbsp;
-            <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-          </p>
-      </div>
+      <%= render :partial => "common/footer" %>
     </footer>
+      
   </body>
 </html>
