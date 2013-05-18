@@ -1,15 +1,2 @@
-<table>
-{{#each card in controller}}
-  <tr>
-    <td>{{card.latitude}}</td>
-    <td>{{card.longitude}}</td>
-    <td>{{card.tag}}</td>
-    <td>{{card.message}}</td>
-    <td>{{card.updatedAt}}</td>
-    <td>
-      {{#view Wildcard.RemoveButtonView contentBinding="card"}}Remove{{/view}}
-    </td>
-  </tr>
-{{/each}}
-</table>
+
 {{view Wildcard.CardMapView contentBinding="controller"}}
