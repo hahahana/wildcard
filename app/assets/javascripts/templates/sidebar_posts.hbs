@@ -2,6 +2,6 @@
 <ul id="cards" class="nav nav-list collapse">
   {{#each card in controller}}
   <script>$('.notify-hack').html(parseInt($('.notify-hack').html())+1)</script>
-  <li ><i class="icon-map-marker" style="color: white; list-style: none;"></i> {{card.latitude}}</li>
+  <li  style="color: white; list-style: none;"><i class="icon-map-marker"></i> {{card.tag}}</li>
   {{/each}}
 </ul>
