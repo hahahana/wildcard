@@ -6,6 +6,7 @@ gem 'active_model_serializers'
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'doorkeeper'
+gem 'geocoder'
 gem 'jquery-rails'
 
 
