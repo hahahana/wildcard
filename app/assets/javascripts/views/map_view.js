@@ -7,10 +7,10 @@ Wildcard.CardMapView = Ember.View.extend({
     var controller = this.get('controller');
     var mapOptions = {
       center: new google.maps.LatLng(this.get('controller.latitude'), this.get('controller.longitude')),
-      zoom: 8,
+      zoom: 13,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    this.$().css({ width: "400px", height: "400px" });
+    this.$().css({ width: "100%", height: "800px" });
     var map = new google.maps.Map(this.$().get(0), mapOptions);
     google.maps.event.addListener(map, 'click', function(event){
       controller.handleClick(event);
