@@ -1,0 +1,10 @@
+.sidebar { 
+  [class^="icon-"],
+  [class*=" icon-"] {
+    width: 18px;
+  }
+
+  .icon-angle-down {
+    width: auto !important;
+  }
+}
