@@ -17,6 +17,7 @@
 //= require ember-data
 //= require_self
 //= require wildcard
+
 Wildcard = Ember.Application.create({
   rootElement: "#wildcard_holder"
 });
