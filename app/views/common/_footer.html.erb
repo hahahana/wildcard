@@ -1,5 +1,5 @@
 <div class="clearfix">
-  <p class="pull-left"><a class="notify-disabled" href="#"  style="margin-right:5px"><i class="icon-chevron-up"></i></a><div id="user_nav" >
+  <p class="pull-left"><div id="user_nav" >
         <% if current_user %>
           Signed in as <strong><%= current_user.name %></strong>!
           <%= link_to "Sign out", signout_path, id: "sign_out" %>
