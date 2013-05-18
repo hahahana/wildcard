@@ -1,3 +1,5 @@
+require 'digest/md5'
+
 class User
   include Mongoid::Document
   # Include default devise modules. Others available are:
@@ -47,6 +49,14 @@ class User
   ## Token authenticatable
   # field :authentication_token, :type => String
   #
+  def picture
+    if provider.match /facebook/i
+      "http://graph.facebook.com/#{uid}/picture?type=large"
+    else 
+      gravatar = Digest::MD5.hexdigest(email)
+      "http://www.gravatar.com/avatar/#{gravatar}?s=300"
+    end
+  end
 
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
