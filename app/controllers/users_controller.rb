@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     if params[:id] == 'me'
-      respond_with current_user
+      respond_with current_user || User.first
     else
       respond_with User.find(params[:id])
     end
