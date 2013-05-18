@@ -23,3 +23,17 @@ Wildcard.Store = DS.Store.extend({
   revision: 12,
   adapter: DS.RESTAdapter.create()
 });
+
+DS.RESTAdapter.registerTransform('coordinatePoint', {
+  serialize: function(value) {
+    // return {
+    //   latitude: value.get('latitude'),
+    //   longitude: value.get('longitude')
+    // };
+    return [value.latitude, value.longitude];
+  },
+  deserialize: function(value) {
+    return Ember.create({ latitude: value[0], longitude: value[1] });
+    // return Ember.create({lattitude: value.latitude, longitude: value.longitude});
+  }
+});
