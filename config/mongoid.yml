@@ -12,26 +12,32 @@ options: &options
   use_utc: true # Ensure all times are UTC in the app side. (default: false)
 
 development:
-  # Configure available database sessions. (required)
   sessions:
-    # Defines the default session. (required)
     default:
       database: wildcard_development
       hosts:
         - localhost:27017
-    options:
+  options:
       <<: *options
 
 test:
   sessions:
     default:
       uri: <%= ENV['MONGOHQ_URL'] %>
-    options:
-      <<: *options
+      options:
+        safe: false
+        consistency: :eventual  # :strong sends everything to master
+  options:
+    <<: *options
+
 
 production:
   sessions:
     default:
       uri: <%= ENV['MONGOHQ_URL'] %>
-    options:
-      <<: *options
+      options:
+        safe: false
+        consistency: :eventual  # :strong sends everything to master
+  options:
+    <<: *options
+
