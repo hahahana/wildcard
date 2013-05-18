@@ -4,7 +4,7 @@ class User
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
+         :recoverable, :rememberable, :trackable, :validatable
 
   ## Database authenticatable
   field :email,              :type => String, :default => ""
@@ -27,6 +27,9 @@ class User
   ## Omniauth
   field :provider,           :type => String
   field :uid,                :type => String
+  field :name, type: String
+  field :oauth_token, type: String
+  field :oauth_expires_at, type: Time
 
   has_many :cards
 
@@ -44,14 +47,19 @@ class User
   ## Token authenticatable
   # field :authentication_token, :type => String
   #
+
   def self.from_omniauth(auth)
-    where(auth.slice(:provider, :uid)).first_or_create do |user|
+    where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
       user.provider = auth.provider
       user.uid = auth.uid
-      # user.username = auth.info.nickname
-      puts auth.info
+      user.email = auth.info.email
+      user.name = auth.info.name
+      user.oauth_token = auth.credentials.token
+      user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.save!
     end
   end
+
 
   def self.new_with_session(params, session)
     if session["devise.user_attributes"]

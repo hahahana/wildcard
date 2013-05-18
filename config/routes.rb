@@ -1,8 +1,12 @@
 Wildcard::Application.routes.draw do
   use_doorkeeper
 
-  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
-
+  devise_for :users
+  
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  
   resources :cards
 
   root to: "home#index"
