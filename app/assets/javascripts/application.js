@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require wildcard
+Wildcard = Ember.Application.create();
+
+Wildcard.Store = DS.Store.extend({
+  revision: 12,
+  adapter: DS.RESTAdapter.create()
+});

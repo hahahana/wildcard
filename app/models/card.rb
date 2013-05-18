@@ -5,5 +5,7 @@ class Card
   field :message,     :type => String
   field :coordinates, :type => Array
 
-  validates_presence_of :tag
+  belongs_to :user
+
+  validates_presence_of :tag, :coordinates
 end

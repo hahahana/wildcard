@@ -10,7 +10,11 @@ gem 'devise'
 gem 'omniauth-twitter'
 gem 'doorkeeper'
 gem 'geocoder'
+gem 'ember-rails',       "~> 0.12.0"
+gem "ember-source",      "~> 1.0.0.rc3.3"
+gem "handlebars-source", "~> 1.0.0.rc3"
 gem 'jquery-rails'
+gem 'json',              '~> 1.7.7'
 
 
 # Gems used only for assets and not required
