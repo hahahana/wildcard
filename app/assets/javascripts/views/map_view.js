@@ -19,6 +19,7 @@ Wildcard.CardMapView = Ember.View.extend({
       }
     });
     this.set('map', map); //save for future updations
+    this.renderPoints();
   },
   reRenderMap: function () {
     if (this.get('map')) {
