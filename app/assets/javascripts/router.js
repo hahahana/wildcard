@@ -4,4 +4,5 @@ Wildcard.Router.reopen({
 
 Wildcard.Router.map(function(match) {
   this.route("map", {path: "/"});
+  // this.resource("cards");
 });
