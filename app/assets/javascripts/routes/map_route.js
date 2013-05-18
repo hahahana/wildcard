@@ -4,11 +4,11 @@ Wildcard.MapRoute = Ember.Route.extend({
   },
   setupController: function(controller, card) {
     this._super(controller, card);
-    // this.controllerFor('user').set('content', );
+    this.controllerFor('user').set('content', Wildcard.User.find('me'));
   },
   renderTemplate: function() {
     this.render();
 
-    // this.render('user');
+    this.render('user', {outlet: 'user'});
   }
 });

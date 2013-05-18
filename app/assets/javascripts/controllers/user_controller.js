@@ -1,2 +1,2 @@
-Wildcard.UserController = Ember.Controller.extend({
+Wildcard.UserController = Ember.ObjectController.extend({
 });
