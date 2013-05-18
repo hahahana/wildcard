@@ -1,6 +1,6 @@
 class PreSeed < Mongoid::Migration
   def self.up    
-    tabfile = Rails.root.join('public', 'locations-small.txt')
+    tabfile = Rails.root.join('public', 'locations-tiny.txt')
     
     File.open(tabfile).each do |line|
       source, tag, name, address, date = line.strip.split("\t")
