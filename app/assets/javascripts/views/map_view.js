@@ -14,6 +14,9 @@ Wildcard.CardMapView = Ember.View.extend({
     var map = new google.maps.Map(this.$().get(0), mapOptions);
     google.maps.event.addListener(map, 'click', function(event){
       controller.handleClick(event);
+      if ($('#pins-menu').css('height') === '0px') {
+        $('a[href$="#pins-menu"]').click();
+      }
     });
     this.set('map', map); //save for future updations
   },
