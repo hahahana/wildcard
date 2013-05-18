@@ -50,7 +50,7 @@ class User
   # field :authentication_token, :type => String
   #
   def picture
-    if provider && provider.match /facebook/i
+    if provider.match /facebook/i
       "http://graph.facebook.com/#{uid}/picture?type=large"
     else
       gravatar = Digest::MD5.hexdigest(email)

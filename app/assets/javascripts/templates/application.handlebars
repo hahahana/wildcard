@@ -1,13 +1,6 @@
 <div class="navbar">
   <div class="navbar-inner">
-    <ul class="nav pull-right">
-      <li>
-        <form class="search form-inline">
-          <input type="text" placeholder="Search...">
-          <button class="search-submit btn-search" value="" type="submit"><i class="icon-search"></i></button>                    
-        </form>                        
-      </li>
-    </ul>
+    
     <a class="brand"><span class="title">Wildkard*</span><span class="logo"></span></a>
   </div>
 </div>
@@ -29,23 +22,7 @@
     
       {{outlet sidebarPosts}}
 
-      <a href="#" class="nav-header" data-toggle="collapse"><i class="icon-signin"></i>Account<span class="label sidebar-label label-info"><i class="icon-angle-down"></i> </span></a>
-      <ul id="accounts-menu" class="nav nav-list collapse">
-          <li ><a href="#"><i class="icon-signin"></i> Sign In</a></li>
-          <li ><a href="#"><i class="icon-signout"></i> Sign Up</a></li>
-          <li ><a href="#"><i class="icon-lock"></i> Reset Password</a></li>
-      </ul>
-
-
-      {{#linkTo "buttons" class="nav-header"}}<i class='icon-calendar'></i>Buttons{{/linkTo}}
-
-      {{#linkTo "map" class="nav-header"}}<i class='icon-camera'></i>Map{{/linkTo}}
-      <a href="#" class="nav-header" ><i class="icon-calendar"></i>Calendar</a>
-
-      <a href="#" class="nav-header" ><i class="icon-map-marker"></i>Maps</a>
-
-      <a href="#" class="nav-header" ><i class="icon-camera"></i>Gallery</a>
-
+      
     </div>
   </div>
 </div>
@@ -53,19 +30,7 @@
 
 
 <div class="content">
-  <ul class="breadcrumb">
-    <li><a href="#">Home</a> <span class="divider"><i class="icon-chevron-right"></i></span></li>
-    <li class="active">Dashboard</li>
-
-    <li class=pull-right> 
-      <div class="dark-well">
-         <div id="reportrange" class="pull-right notify well-picker">
-            <i class="icon-calendar"></i>
-            <span></span> <b class="caret"></b>
-         </div>
-      </div>
-    </li>
-  </ul>
+  
   <div class="wrapper-content">
     {{outlet}}
   </div>
