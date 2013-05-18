@@ -1,7 +1,14 @@
 <div class="navbar">
   <div class="navbar-inner">
-    
-    <a class="brand"><span class="title" style="padding: 20px;">Wildkard*</span><span class="logo"></span></a>
+    <ul class="nav pull-right">
+      <li>
+        <form class="search form-inline">
+          <input type="text" placeholder="Search...">
+          <button class="search-submit btn-search" value="" type="submit"><i class="icon-search"></i></button>                    
+        </form>                        
+      </li>
+    </ul>
+    <a class="brand"><span class="title">Wildkard*</span><span class="logo"></span></a>
   </div>
 </div>
 
@@ -20,9 +27,11 @@
 
     <div class="nav-collapse subnav-collapse collapse ">
     
+      {{#linkTo "buttons" class="nav-header"}}<i class='icon-calendar'></i>Buttons{{/linkTo}}
+
+      {{#linkTo "map" class="nav-header"}}<i class='icon-camera'></i>Map{{/linkTo}}
       {{outlet sidebarPosts}}
 
-      
     </div>
   </div>
 </div>
