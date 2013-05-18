@@ -12,11 +12,41 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap/js/bootstrap
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require_self
 //= require wildcard
+//= require fullcalendar/fullcalendar.min
+//= require pnotify/jquery.pnotify.min
+//= require jasny/bootstrap-fileupload
+//= require jasny/bootstrap-inputmask
+//= require jasny/bootstrap-typeahead
+//= require justgage/justgage.1.0.1
+//= require justgage/raphael.2.1.0.min 
+//= require flot/jquery.flot
+//= require flot/excanvas
+//= require flot/jquery.flot.pie
+//= require flot/jquery.flot.stack
+//= require responsive-tables
+//= require jquery.sparkline
+//= require bootstrap-slider
+//= require icheckdemo
+//= require charts
+//= require date
+//= require daterangepicker   
+//= require jquery.icheck    
+//= require wizard
+//= require jquery-ui-1.10.2.custom.min
+//= require wysihtml5-0.3.0
+//= require bootstrap-wysihtml5
+//= require prettyprint
+//= require jquery.spellchecker
+//= require parsley
+//= require jquery.masonry.min
+//= require custom
+
 
 Wildcard = Ember.Application.create({
   rootElement: "#wildcard_holder"
