@@ -1,0 +1,28 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+*/
+// @import "settings";
+
+
+@import "vendor/lib/bootstrap/css/bootstrap.css";
+@import "vendor/lib/bootstrap/css/bootstrap-responsive.css";
+@import "vendor/lib/fullcalendar/fullcalendar.css";
+@import "vendor/lib/fullcalendar/fullcalendar.print.css";
+@import "vendor/lib/jasny/bootstrap-fileupload.css";
+@import "vendor/lib/todo/css/base.css";
+@import "vendor/lib/todo/css/app.css";
+@import "vendor/masonry.css";
+@import "vendor/wizard.css";
+@import "vendor/bootstrap-wysihtml5";
+@import "vendor/slider";
+@import "main";
+
+//@import 'font-awesome';

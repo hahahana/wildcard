@@ -17,23 +17,29 @@
 //= require ember-data
 //= require_self
 //= require wildcard
-Wildcard = Ember.Application.create();
+Wildcard = Ember.Application.create({
+  rootElement: "#wildcard_holder"
+});
 
 Wildcard.Store = DS.Store.extend({
   revision: 12,
   adapter: DS.RESTAdapter.create()
 });
 
-Wildcard.initMap = function () {
+Canvas = Ember.Application.create({
+  rootElement: "#map_canvas"
+});
+
+Canvas.initMap = function () {
   var myOptions = {
     center: new google.maps.LatLng(29.75002,-95.371718),
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  Wildcard.map = new google.maps.Map($("#map_canvas")[0],
+  Canvas.map = new google.maps.Map($("#map_canvas")[0],
       myOptions);
 };
 
-Wildcard.ready = function () {
-  Wildcard.initMap();
+Canvas.ready = function () {
+  Canvas.initMap();
 };
