@@ -8,6 +8,7 @@ gem 'unicorn'
 gem 'active_model_serializers'
 gem 'devise'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'doorkeeper'
 gem 'geocoder'
 gem 'ember-rails',       "~> 0.12.0"
