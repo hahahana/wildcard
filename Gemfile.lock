@@ -77,9 +77,6 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.7)
       multipart-post (~> 1.1)
-    font-awesome-sass-rails (3.0.2.2)
-      railties (>= 3.1.1)
-      sass-rails (>= 3.1.1)
     geocoder (1.1.8)
     handlebars-source (1.0.0.rc3)
     hashie (2.0.5)
@@ -211,7 +208,6 @@ DEPENDENCIES
   doorkeeper
   ember-rails (~> 0.12.0)
   ember-source (~> 1.0.0.rc3.3)
-  font-awesome-sass-rails
   geocoder
   handlebars-source (~> 1.0.0.rc3)
   jquery-rails
