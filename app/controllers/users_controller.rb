@@ -8,6 +8,10 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    respond_with User.find(params[:id])
+    if params[:id] == 'me'
+      respond_with current_user
+    else
+      respond_with User.find(params[:id])
+    end
   end
 end
