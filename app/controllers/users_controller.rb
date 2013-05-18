@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
-  # GET /user
-  # GET /user.json
+  respond_to :json
+ 
+  def index
+    respond_with User.all
+  end
+
+  # GET /users/1
+  # GET /users/1.json
   def show
-    respond_to do |format|
-      format.json {
-        render :json => current_user
-      }
-    end
+    respond_with User.find(params[:id])
   end
 end
