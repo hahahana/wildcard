@@ -28,6 +28,8 @@ class User
   field :provider,           :type => String
   field :uid,                :type => String
 
+  has_many :cards
+
   ## Confirmable
   # field :confirmation_token,   :type => String
   # field :confirmed_at,         :type => Time
@@ -46,7 +48,8 @@ class User
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
-      user.username = auth.info.nickname
+      # user.username = auth.info.nickname
+      puts auth.info
     end
   end
 
