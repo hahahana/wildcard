@@ -1,0 +1,93 @@
+Source	Tag	Name	SR_LOCATION	Date
+311	pothole		"2118 FORELAND, HOUSTON TX 77077"	1/30/13
+311	pothole		"7313 BROMPTON, HOUSTON TX 77025"	2/24/13
+311	pothole		"1250 ELDRIDGE, HOUSTON TX 77077"	1/31/13
+311	pothole		"1392 ENCLAVE, HOUSTON TX 77077"	2/12/13
+311	pothole		"3110 HILLCROFT, HOUSTON TX 77057"	2/13/13
+311	pothole		"1545 ELDRIDGE, HOUSTON TX 77077"	1/30/13
+311	pothole		"6517 AVENUE F, HOUSTON TX 77011"	3/13/13
+311	pothole		"6977 MAIN, HOUSTON TX 77030"	1/17/13
+311	pothole		"1390 ENCLAVE PKW, HOUSTON TX 77077"	2/12/13
+311	pothole		"2247 SOUTH, HOUSTON TX 77005"	2/2/13
+311	pothole		"1527 ASHBURY PARK, HOUSTON TX 77077"	1/30/13
+311	pothole		"3033 CLINTON, HOUSTON TX 77020"	1/31/13
+311	pothole		"1127 ELDRIDGE, HOUSTON TX 77077"	1/29/13
+311	pothole		"2411 ELDRIDGE S, HOUSTON TX 77077"	1/30/13
+311	pothole		"1107 ENCLAVE E, HOUSTON TX 77077"	1/30/13
+311	pothole		"5220 WESLAYAN, HOUSTON TX 77005"	2/11/13
+311	pothole		"8611 AIRPORT, HOUSTON TX 77061"	1/4/13
+311	pothole		"1255 ELDRIDGE, HOUSTON TX 77077"	1/30/13
+311	pothole		"8320 GULF FWY, HOUSTON TX 77061"	2/6/13
+311	pothole		"1485 ENCLAVE, HOUSTON TX 77077"	2/12/13
+311	pothole		"1392 ENCLAVE, HOUSTON TX 77077"	2/12/13
+311	pothole		"1302 BLALOCK, HOUSTON TX 77055"	1/30/13
+311	pothole		"1401 HYDE PARK, HOUSTON TX 77006"	2/2/13
+311	pothole		"8308 GULF FWY, HOUSTON TX 77061"	2/6/13
+311	pothole		"1111 ELDRIDGE, HOUSTON TX 77077"	2/18/13
+311	pothole		"559 N ELDRIDGE, HOUSTON TX 77079"	2/18/13
+311	pothole		"1851 CROSSPOINT, HOUSTON TX 77054"	1/3/13
+311	pothole		"2802 FRANCIS, HOUSTON TX 77004"	3/13/13
+Valet	Valet	HEARSAY LLC	200 Travis	
+Valet	Valet	HOTEL ICON	900 CONGRESS	
+Valet	Valet	HOTEL ZAZA	5700 EWING	
+Valet	Valet	HOUSTON ASTROS BASEBALL CLUB	"1600 TEXAS, NORTH SIDE"	
+Valet	Valet	HOUSTON ASTROS BASEBALL CLUB	"500 CRAWFORD, EAST SIDE"	
+Valet	Valet	HOUSTON PAVILIONS	1200 CAROLINE WEST SIDE @ POLK	
+Valet	Valet	HOUSTON PAVILIONS	1200 FANNIN @ DALLAS EAST SIDE	
+Valet	Valet	HOUSTON PAVILIONS	1200 SAN JACINTO WEST SIDE	
+Valet	Valet	HOUSTON PAVILIONS	"1200 FANNIN @ POLK, EAST SIDE"	
+Valet	Valet	HOUSTON PAVILIONS	1200 CAROLINE WEST SIDE @ DALLAS	
+Valet	Valet	HOUSTON PAVILIONS	1200 DALLAS SOUTH SIDE	
+Valet	Valet	HOWL AT THE MOON	612 HADLEY	
+Valet	Valet	INN AT THE BALLPARK	1500 Texas	
+Valet	Valet	LANCASTER HOTEL	700 TEXAS AVENUE	
+Valet	Valet	MAGNOLIA HOTEL	1100 TEXAS EAST SIDE	
+Valet	Valet	MORTON'S THE STEAKHOUSE	1000 McKinney	
+Valet	Valet	NINFAS 	2700 NAVIGATION	
+Valet	Valet	POST RICE LOFTS	900 TEXAS NORTH SIDE	
+Valet	Valet	THE CORINTHIAN	200 FANNIN EAST SIDE	
+Dog Friendly	doggies	Celtic Gardens	"2300 Louisiana , Houston, TX 77006"	
+Dog Friendly	doggies	Inversion Coffee House 	"1953 Montrose, Houston, TX 77006"	
+Dog Friendly	doggies	BRC 	"519 Shepherd , Houston, TX 77007"	
+Dog Friendly	doggies	Starbucks 	"2029 West Gray , Houston, TX 77019"	
+Dog Friendly	doggies	Starbucks 	"2050 West Gray , Houston, TX 77019"	
+Dog Friendly	doggies	Ruggles Café & Bakery 	"2365 Rice Blvd. Suite A , Houston, TX 77005"	
+Dog Friendly	doggies	Berryhill Baja Grill 	"3407 Montrose A_8 , Houston, TX 77006"	
+Dog Friendly	doggies	Brick House Tavern and Tap 	"12910 Northwest Freeway , Houston, TX 77040"	
+Dog Friendly	doggies	Natchee’s Supper ‘n Punch 	"3622 Main , Houston, TX 77002"	
+Dog Friendly	doggies	Petite Sweets 	"2700 W. Alabama , Houston, TX 77098"	
+Dog Friendly	doggies	Christian’s Tailgate Bar & Grill II 	"2000 Bagby Suite 106 , Houston, TX 77002"	
+Dog Friendly	doggies	Christian’s Tailgate Bar & Grill III 	"2820 White Oak , Houston, TX 77007"	
+Dog Friendly	doggies	J. Black’s Houston_Washington Avenue LLC 	"110 S. Heights Blvd. , Houston, TX 77007"	
+Dog Friendly	doggies	The King’s Head 	"1809 Eldridge Parkway , Houston, TX 77077"	
+Dog Friendly	doggies	Mission Burritos 801 	"2245 W. Alabama , Houston, TX 77098"	
+Dog Friendly	doggies	Mission Burritos 802 	"1609 Durham , Houston, TX 77007"	
+Dog Friendly	doggies	Winston’s on Washington 	"5111 Washington, Houston, TX 77007"	
+Dog Friendly	doggies	Cottonwood 	"3422 N. Shepherd , Houston, TX 77018"	
+Dog Friendly	doggies	Taco Milagro Kirby 	"2555 Kirby , Houston, TX 77019"	
+Dog Friendly	doggies	Jimmy’s Ice House 	"2803 White Oak, Houston, TX "	
+Dog Friendly	doggies	Baba Yega 	"2607 Grant , Houston, TX 77006"	
+Dog Friendly	doggies	Mia’s Table 	"3131 Argonne , Houston, TX 77098"	
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1900 PRESTON ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1700 TEXAS ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1700 TEXAS ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1700 TEXAS ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2400 ROSEWOOD ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2400 ROSEWOOD ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2600 FANNIN ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2600 FANNIN ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2500 WICHITA ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"2400 ROSEWOOD ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"1400 HAWTHORNE ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"300 AVALON, Houston, TX"	3/31/13
+Parking Tickets	pticket		"49 N SAN JACINTO ST, Houston, TX"	3/31/13
+Parking Tickets	pticket		"49 N SAN JACINTO ST, Houston, TX"	3/31/13
+Fake	dbag	The Drinkery	"4115 Washington Avenue, Houston TX"	5/18/13
+Fake	dbag	Cadillac Bar	"1802 Shepherd Drive, Houston, TX"	5/18/13
+Fake	dbag	Porch Swing Pub	"69 Heights Blvd, Houston, TX"	5/18/13
+Fake	dbag	TQLA	"4601 Washington Avenue, Houston, TX"	5/18/13

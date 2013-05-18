@@ -99,6 +99,11 @@ GEM
       moped (~> 1.4)
       origin (~> 1.0)
       tzinfo (~> 0.3.22)
+    mongoid_rails_migrations (1.0.1)
+      activesupport (>= 3.2.0)
+      bundler (>= 1.0.0)
+      rails (>= 3.2.0)
+      railties (>= 3.2.0)
     moped (1.5.0)
     multi_json (1.7.3)
     oauth (0.4.7)
@@ -196,6 +201,7 @@ DEPENDENCIES
   json (~> 1.7.7)
   mongoid
   mongoid_geospatial!
+  mongoid_rails_migrations
   omniauth-twitter
   pry
   rails (= 3.2.13)

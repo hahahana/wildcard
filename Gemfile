@@ -16,7 +16,8 @@ gem "handlebars-source", "~> 1.0.0.rc3"
 gem 'jquery-rails'
 gem 'json',              '~> 1.7.7'
 gem 'mongoid_geospatial', :git => 'git://github.com/kristianmandrup/mongoid_geospatial.git'
-
+gem 'mongoid_rails_migrations'
+gem 'geocoder'
 
 # Gems used only for assets and not required
 # in production environments by default.
