@@ -539,7 +539,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', end
   background: #f8f8f6;
   margin-left: 240px;
   margin-top: -2px;
-  padding-bottom: 6px;
   border-left: 1px solid #000000;
   border-left: 1px solid #111;
   border-bottom: 1px solid #111111;
@@ -672,7 +671,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', end
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #222222;
-  margin-bottom: .5em;
+  margin-bottom: 0px;
   padding: 1.15em 0 1.15em 1.15em;
   border-left: 1px solid #333333;
   border-top: 1px solid #333333;
@@ -3290,7 +3289,10 @@ display: block;
       right: 31%;
   }  
 
-  .wrapper-content{padding: 0 10px;}
+  .container-fluid {
+padding-right: 5px;
+padding-left: 5px;
+}
 
   .inbox-message{display: none;}
 
