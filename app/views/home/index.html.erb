@@ -51,8 +51,182 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>FB.login(function(response){});</script>
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<p>Hey a*hole</p>
-Lalala
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+
+
+<!-- <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button> -->
+
+<div class="navbar">
+      <div class="navbar-inner">
+
+              <ul class="nav pull-right">
+
+                  <li>
+                  <form class="search form-inline">
+                      <input type="text" placeholder="Search...">
+                      <button class="search-submit btn-search" value="" type="submit"><i class="icon-search"></i></button>                        
+                  </form>                        
+
+                  </li>
+                  
+                  <li class="dropdown header-border">
+                      <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                          <span class="email-notify"><i class="icon-envelope-alt"></i><span class="email-alert"><i class="icon-circle"></i> </span></span>
+                      </a>
+
+                      <ul class="dropdown-menu block-dark messages">
+                          <li class="view-all"><a href="#">View all messages</a></li>   
+                          <li><a href="#">
+                              <!-- <div class="avatar"><img height="45" width="45" src="assets/images/face-1.jpg" alt="Your profile"></div> -->
+                              <div class="info">Antonio Heide <span class="timer">36 min</span></div>    
+                              <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem necessitatibus.</div>
+                              </a>
+                          </li>
+                          <li><a href="#">
+                              <!-- <div class="avatar"><img height="45" width="45" src="assets/images/face-2.jpg" alt="Your profile"></div> -->
+                              <div class="info">Melissa Evans <span class="timer">52 min</span></div>    
+                              <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis optio ad placeat incidunt iste non enim nisi quae culpa.</div>
+                              </a>
+                          </li>                                               
+                      </ul>
+                  </li>   
+
+                  <li class="dropdown header-border">
+                      <a href="#" role="button" class="dropdown-toggle " data-toggle="dropdown">
+                          <div class="notify">7</div>
+                      </a>
+
+                      <ul class="dropdown-menu block-dark messages msg-notify">
+                          <li class="view-all"><a href="#">View all notifications</a></li>   
+                          <li><a href="#"><div><i class="icon-comment"></i>  new comment <span class="timer">2 min</span></div></a>                        
+                          <li><a href="#"><div><i class="icon-twitter"></i>  new follower <span class="timer">6 min</span></div></a> 
+                          <li><a href="#"><div><i class="icon-thumbs-up"></i> new like <span class="timer">9 min</span></div></a>                        
+                          <li><a href="#"><div><i class="icon-twitter"></i>  new follower <span class="timer">25 min</span></div></a> 
+                          <li><a href="#"><div><i class="icon-user"></i>  new registration <span class="timer">32 min</span></div></a>                        
+                          <li><a href="#"><div><i class="icon-comment"></i>  new comment <span class="timer">2 hours</span></div></a>     
+                          <li><a href="#"><div><i class="icon-map-marker"></i>  new localization <span class="timer">Yesterday</span></div></a>     
+                      </ul>
+                  </li>                                   
+
+                  <li class="dropdown header-border">
+                      <a href="#" role="button" class="dropdown-toggle " data-toggle="dropdown">
+                          <div class="thumb-account">
+                              <img height="20" width="20" src="http://www.gravatar.com/avatar/9f45b377729db1230c3e09ed3bd1c906" alt="Your profile">
+                              <span><i class="icon-caret-down"></i></span>
+                          </div>
+                      </a>
+
+                      <ul class="dropdown-menu block-dark account">
+                          <li class="first"><a tabindex="-1" href="#"><i class="icon-user"></i> Your profile</a></li>
+                          <li class="first"><a tabindex="-1" href="#"><i class="icon-cogs"></i> Settings</a></li>
+                          <li><a tabindex="-1" href="sign-in.html"><i class="icon-signin"></i> Log in</a></li>
+                          <li class="last notify-disabled"><a tabindex="-1" href="sign-in.html"><i class="icon-signout"></i> Logout</a></li>
+                      </ul>
+                  </li>
+                  
+
+              </ul>
+              <a class="brand" href="index.html"><span class="title">Austra</span> <span class="logo"></span></a>
+      </div>
+  </div><!-- navbar --> 
+
+
+  <div data-offset-top="360" data-spy="affix" class="sidebar-nav affix">
+      <form class="search form-inline">
+          <input type="text" placeholder="Search...">
+          <button class="search-submit btn-search" value="" type="submit"><i class="icon-search"></i></button>                        
+      </form>    
+
+      <div class="sidebar-avatar">
+          <img src="http://www.gravatar.com/avatar/9f45b377729db1230c3e09ed3bd1c906?s=200" alt="avatar" class="thumbnail-avatar">
+          <a href="#"><div class="sidebar-avatar-message"><div class="notify notify-message"><i class="icon-envelope"></i></div></div></a>
+          <a href="#"><div class="sidebar-avatar-notify"><div class="notify ">7</div></div></a>
+       </div>
+
+
+      <a data-toggle="collapse" data-target=".nav-collapse" class="btn-sidebar">
+          <span class="notify navigation span12"><i class="icon-reorder"></i> Navigation <span class="pull-right label sidebar-label label-danger"><i class="icon-angle-down"></i> </span></span>
+      </a>
+
+
+      <div class="nav-collapse subnav-collapse collapse ">
+          <a href="index.html" class="nav-header active" ><i class="icon-dashboard"></i>Dashboard</a>
+          <a href="dashboard-dark.html" class="nav-header active" ><i class="icon-dashboard"></i>Dashboard #dark</a>
+
+          <a href="#ui-elements" class="nav-header" data-toggle="collapse"><i class="icon-magic"></i>UI Elements<span class="label sidebar-label label-info"><i class="icon-angle-down"></i> </span></a>
+          <ul id="ui-elements" class="nav nav-list collapse">
+              <li><a href="grid.html"><i class="icon-tasks"></i> Grid Layout</a></li>
+              <li><a href="button.html"><i class="icon-circle"></i> Buttons</a></li> 
+              <li ><a href="block.html"><i class="icon-list-alt"></i> Block</a></li>
+              <li><a href="interface.html"><i class="icon-laptop"></i> Interface elements</a></li>
+              <li><a href="components.html"><i class="icon-table"></i> Components</a></li>
+              <li><a href="icons.html"><i class="icon-info-sign"></i> Icons</a></li>
+              <li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
+          </ul>     
+
+          <a href="#form" class="nav-header" data-toggle="collapse"><i class="icon-edit"></i>Forms<span class="label sidebar-label label-info"><i class="icon-angle-down"></i> </span></a>
+          <ul id="form" class="nav nav-list collapse">
+              <li><a href="tables.html"><i class="icon-table"></i> Tables</a></li>
+              <li><a href="validate.html"><i class="icon-ok"></i> Validate</a></li>
+              <li><a href="wizard.html"><i class="icon-exchange"></i> Wizard</a></li>
+              <li><a href="widgets.html"><i class="icon-reorder"></i> Widgets</a></li>
+          </ul>                     
+
+          <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-signin"></i>Account<span class="label sidebar-label label-info"><i class="icon-angle-down"></i> </span></a>
+          <ul id="accounts-menu" class="nav nav-list collapse">
+              <li ><a href="sign-in.html"><i class="icon-signin"></i> Sign In</a></li>
+              <li ><a href="sign-up.html"><i class="icon-signout"></i> Sign Up</a></li>
+              <li ><a href="password.html"><i class="icon-lock"></i> Reset Password</a></li>
+          </ul>   
+
+          <a href="#chart" class="nav-header" data-toggle="collapse"><i class="icon-bar-chart"></i>Charts & graphs<span class="label sidebar-label label-info"><i class="icon-angle-down"></i> </span></a>
+          <ul id="chart" class="nav nav-list collapse">
+              <li ><a href="charts.html"><i class="icon-picture"></i> Basic Charts</a></li>  
+              <li ><a href="graphs.html"><i class="icon-signal"></i> Advanced Charts</a></li>   
+          </ul>                         
+
+          <a href="inbox.html" class="nav-header" ><i class="icon-envelope"></i>Inbox</a>            
+
+          <a href="calendar.html" class="nav-header" ><i class="icon-calendar"></i>Calendar</a>
+
+          <a href="maps.html" class="nav-header" ><i class="icon-map-marker"></i>Maps</a>
+
+          <a href="gallery.html" class="nav-header" ><i class="icon-camera"></i>Gallery</a>
+
+
+      </div>
+
+
+
+  </div><!-- sidebar --> 
+
+  <div class="content">
+      
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider"><i class="icon-chevron-right"></i></span></li>
+        <li class="active">Dashboard</li>
+
+        <li class=pull-right> 
+          <div class="dark-well">
+
+             <div id="reportrange" class="pull-right notify well-picker">
+                <i class="icon-calendar"></i>
+                <span></span> <b class="caret"></b>
+             </div>
+
+             
+
+          </div>                
+        </li>          
+      </ul><!-- breadcrumb -->           
+      
+      <div class="wrapper-content">
+
+            
+<div id="map_canvas" style="width:100%; height:800px"></div>
+
+      </div><!-- wrapper-content -->    
+  </div><!-- content -->   
+
+
+<div id="wildcard_holder" style="display:none"></div>
+
