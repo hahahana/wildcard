@@ -1,7 +1,12 @@
 Wildcard.ButtonsRoute = Ember.Route.extend({
-  // model: function() {
-  //   return Wildcard.Card.find();
-  // },
+  model: function() {
+    var buttons = [
+      Em.Object.create({url: 'images/douchebag.jpg', name: "A*hole"}),
+      Em.Object.create({url: 'images/test.jpg', name: "Pothole"})
+    ];
+    // var ap = Ember.ArrayProxy.create({ content: Ember.A(buttons) });
+    return Ember.A(buttons);
+  },
   setupController: function(controller, card) {
     this._super(controller, card);
     this.controllerFor('user').set('content', Wildcard.User.find('me'));

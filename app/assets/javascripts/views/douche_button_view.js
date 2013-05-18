@@ -1,6 +1,11 @@
 Wildcard.DoucheButtonView = Ember.View.extend({
-  tagName: 'button',
+  templateName: 'dbv',
+  // tagName: 'button',
+  url: function () {
+    return this.get('content.url');
+  }.observes('content'),
   didInsertElement: function () {
+    console.log(this);
   },
   click: function (evt) {
     var self = this;

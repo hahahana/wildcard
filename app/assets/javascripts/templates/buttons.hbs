@@ -1,2 +1,3 @@
-{{#view Wildcard.DoucheButtonView}}a*hole{{/view}}
-{{#view Wildcard.DoucheButtonView}}*pothole{{/view}}
+{{#each button in controller}}
+  {{view Wildcard.DoucheButtonView contentBinding="button"}}
+{{/each}}
