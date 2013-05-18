@@ -3,5 +3,5 @@ Wildcard.Router.reopen({
 });
 
 Wildcard.Router.map(function(match) {
-  this.route("index", {path: "/"});
+  this.route("map", {path: "/"});
 });

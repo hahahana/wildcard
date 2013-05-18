@@ -1,15 +1,3 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
-// GO AFTER THE REQUIRES BELOW.
-//
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap/js/bootstrap
@@ -24,7 +12,7 @@
 //= require jasny/bootstrap-inputmask
 //= require jasny/bootstrap-typeahead
 //= require justgage/justgage.1.0.1
-//= require justgage/raphael.2.1.0.min 
+//= require justgage/raphael.2.1.0.min
 //= require flot/jquery.flot
 //= require flot/excanvas
 //= require flot/jquery.flot.pie
@@ -35,8 +23,8 @@
 //= require icheckdemo
 //= require charts
 //= require date
-//= require daterangepicker   
-//= require jquery.icheck    
+//= require daterangepicker
+//= require jquery.icheck
 //= require wizard
 //= require jquery-ui-1.10.2.custom.min
 //= require wysihtml5-0.3.0
@@ -66,20 +54,20 @@ DS.RESTAdapter.registerTransform('coordinatePoint', {
   }
 });
 
-Wildcard.initMap = function () {
-  var myOptions = {
-    center: new google.maps.LatLng(29.75002,-95.371718),
-    zoom: 13,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  Wildcard.map = new google.maps.Map($("#map_canvas")[0],
-      myOptions);
-};
+// Wildcard.initMap = function () {
+//   var myOptions = {
+//     center: new google.maps.LatLng(29.75002,-95.371718),
+//     zoom: 13,
+//     mapTypeId: google.maps.MapTypeId.ROADMAP
+//   };
+//   Wildcard.Map = new google.maps.Map($("#map_canvas")[0],
+//       myOptions);
+// };
 
-Wildcard.ready = function () {
-  Wildcard.initMap();
-};
-
+// Wildcard.ready = function () {
+//   Wildcard.initMap();
+// };
+//
 
 
 // var App = Em.Application.create();
@@ -140,19 +128,6 @@ Wildcard.ready = function () {
 //   contentBinding: 'App.markers.selection'
 // });
 
-// App.Marker = Ember.Object.extend({
-//   latLng: null,
-//   latitude: function () {return this.latLng.lat()}.property('latLng'),
-//   longitude: function () {return this.latLng.lng()}.property('latLng'),
-//   removeFromMap: function () {
-//     i = App.markers.get('content').indexOf(this);
-//     App.markers.removeAt(i);
-//   },
-//   markerClick: function () {
-//     App.markers.set('selection', this);
-//   }
-// });
-
 // App.mapController = Em.Object.create({
 //   markersForMapBinding: "App.markers.content",
 //   markersDisplayed: [],
@@ -177,13 +152,4 @@ Wildcard.ready = function () {
 //   }.observes('markersForMap.@each')
 // });
 
-// App.ListView = Em.View.extend({
-//   contentBinding: "App.markers.content"
-// });
-
-// App.ready = function () {
-//   App.initMap();
-// };
-
-// App.initialize();
 
