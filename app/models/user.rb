@@ -30,7 +30,7 @@ class User
   field :name, type: String
   field :oauth_token, type: String
   field :oauth_expires_at, type: Time
-
+  field :profile_picture, type: String
   has_many :cards
 
   ## Confirmable
@@ -50,16 +50,17 @@ class User
 
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
+      Rails.logger.info auth
       user.provider = auth.provider
       user.uid = auth.uid
       user.email = auth.info.email
       user.name = auth.info.name
+      user.profile_picture = auth.info.image.gsub("square", "large")
       user.oauth_token = auth.credentials.token
       user.oauth_expires_at = Time.at(auth.credentials.expires_at)
       user.save!
     end
   end
-
 
   def self.new_with_session(params, session)
     if session["devise.user_attributes"]
